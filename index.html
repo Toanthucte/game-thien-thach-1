@@ -169,7 +169,7 @@
         async function callGeminiAPI(prompt, targetElement, title) {
             targetElement.classList.remove('hidden');
             targetElement.innerHTML = `<div class="flex flex-col items-center justify-center p-4"><div class="loader"></div><p class="mt-4 text-cyan-300">AI đang phân tích...</p></div>`;
-            const apiKey = "AIzaSyBeDtS5Eb251lD049VZCrj3fPZ1tiJpmg0";
+            const apiKey = "keyapi o trong note ";
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
             let chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
             const payload = { contents: chatHistory };
